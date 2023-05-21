@@ -1,31 +1,55 @@
 # EEG-Based Classification of Motor Imagery States
 This repository provides an implementation of motor imagery electroencephalogram (EEG) signal classification based on convolutional neural networks (CNNs). The repository's code performs classification of EEG signals that correspond to imagined movement using a modified EEG-Inception neural network architecture.
 
-## Dataset
-The EEG dataset used in this project is provided in this repository.
+This repository contains the code and datasets for the EEG classification project using CNN. The project was developed as part of the "Human-computer interaction technology" course at Huazhong University of Science and Technology, School of AI and Automation in 2022. 华中科技大学，人工智能与自动化学院，人机交互技术，课程设计
 
-## CNN Model
-The CNN model used for classification in this project is based on the EEG-Inception neural network architecture. The code provides a modified version of the architecture that uses fewer parameters compared to the original model, and is optimized for EEG data classification.
+## Project Overview
 
-Initially, a 1D-LeNet model was implemented to classify the EEG signals, but the results were suboptimal, achieving only 50% accuracy. Therefore, the modified EEG-Inception neural network model was implemented, which improved the classification accuracy substantially.
+The project focuses on exploring the application of CNNs in classifying EEG signals obtained from healthy subjects performing motor imagery tasks. The dataset consists of EEG recordings from 8 subjects, with two types of motor imagery tasks: right hand and both feet. The data is preprocessed and provided in .npz and .mat formats. 
 
-## Usage
-The code for the project is contained within a Jupyter notebook file (.ipynb file extension). The file reads in the EEG dataset, preprocesses the data, builds the modified EEG-Inception network model, and trains the model on the data. The resulting model is then used to predict the motor imagery states of new EEG signals.
+The project includes the following sections:
 
-Users can modify the code parameters such as the number of training epochs or learning rate in order to customize the model.
+1. Dataset Description: Provides an overview of the data collection process and details about the dataset structure.
+2. Experimental Procedure: Describes the steps involved in loading the dataset, visualizing the data, and implementing the CNN models.
+3. Model Evaluation: Presents the evaluation results of the 1D-LeNet model and the modified EEG-Inception Neural Network model.
+4. Predicting the Test Set: Describes the process of predicting the test set using the saved CNN model.
+5. Conclusion: Summarizes the findings of the study and discusses the challenges and future improvements.
+
+## Repository Structure
+
+The repository is organized as follows:
+
+- `CNN_EEG.ipynb`: Jupyter Notebook file containing the code implementation.
+- `datasets/`: Directory containing the dataset files in .npz and .mat formats.
+- `results/`: Directory containing the results of the model evaluation and predictions.
+- `README.md`: This file, providing an overview of the repository and the project.
+
+## Getting Started
+
+To get started with the project, follow these steps:
+
+1. Clone the repository: `git clone https://github.com/Kairos-han/EEG-based-classification-of-motor-imagery-states.git`
+2. Open `CNN_EEG.ipynb` in Jupyter Notebook or any compatible environment.
+3. Ensure that the required dependencies are installed (mentioned in the notebook).
+4. Run the code cells in the notebook to reproduce the experiments and analyze the results.
+5. Explore the `datasets/` and `results/` directories for the dataset files and generated results.
 
 ## Dependencies
-This project requires several Python packages to be installed, including tensorflow, numpy, matplotlib, sklearn, pandas, and scipy. Installation instructions can be found on their respective websites.
 
-## Future Work
-This project can be extended in several directions in the future. One potential direction is to use other machine learning models, such as Recurrent Neural Networks (RNNs), Attention-based Neural Networks or adversarial training with generative neural networks, and compare their performance with the modified EEG-Inception architecture. Another direction is to explore transfer learning approaches that can improve the accuracy of the model, especially when the size of the dataset is small.
+The project code has the following dependencies:
 
-## License
-This project is licensed under the MIT License.
+- Python
+- Jupyter Notebook
+- NumPy
+- Pandas
+- Matplotlib
+- Scikit-learn
+- TensorFlow
 
 ## References
-Chollet, F. (2016). Xception: Deep Learning with Depthwise Separable Convolutions, arXiv preprint arXiv:1610.02357
 
-Lawhern, V. J., Solon, A. J., Waytowich, N. R., Gordon, S. M., Hung, C. P., & Lance, B. J. (2018). EEGNet: A Compact Convolutional Neural Network for EEG-based Brain-Computer Interfaces. Journal of Neural Engineering, in press.
+[1] Zhang, C., Kim, Y. K., & Eskandarian, A. (2021). EEG-inception: an accurate and robust end-to-end neural network for EEG-based motor imagery classification. Journal of Neural Engineering, 18(4), 046014.
+[2] Xu, B., Zhang, L., Song, A., Wu, C., Li, W., Zhang, D., ... & Zeng, H. (2018). Wavelet transform time-frequency image and convolutional network-based motor imagery EEG classification. Ieee Access, 7, 6084-6093.
+[3] Tabar, Y. R., & Halici, U. (2016). A novel deep learning approach for classification of EEG motor imagery signals. Journal of neural engineering, 14(1), 016003.
+[4] Aggarwal, S., & Chugh, N. (2019). Signal processing techniques for motor imagery brain computer interface: A review. Array, 1, 100003.
 
-Zhang, X., Ma, L., & Wu, G. (2018). A Comparative Study on Convolutional Neural Network-based Classification of Motor Imagery EEG Signals, Journal of Neural Engineering
