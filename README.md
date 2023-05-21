@@ -48,8 +48,8 @@ The project code has the following dependencies:
 
 ## References
 
-[1] Zhang, C., Kim, Y. K., & Eskandarian, A. (2021). EEG-inception: an accurate and robust end-to-end neural network for EEG-based motor imagery classification. Journal of Neural Engineering, 18(4), 046014.
-[2] Xu, B., Zhang, L., Song, A., Wu, C., Li, W., Zhang, D., ... & Zeng, H. (2018). Wavelet transform time-frequency image and convolutional network-based motor imagery EEG classification. Ieee Access, 7, 6084-6093.
-[3] Tabar, Y. R., & Halici, U. (2016). A novel deep learning approach for classification of EEG motor imagery signals. Journal of neural engineering, 14(1), 016003.
-[4] Aggarwal, S., & Chugh, N. (2019). Signal processing techniques for motor imagery brain computer interface: A review. Array, 1, 100003.
+- [1] Zhang, C., Kim, Y. K., & Eskandarian, A. (2021). EEG-inception: an accurate and robust end-to-end neural network for EEG-based motor imagery classification. Journal of Neural Engineering, 18(4), 046014.
+- [2] Xu, B., Zhang, L., Song, A., Wu, C., Li, W., Zhang, D., ... & Zeng, H. (2018). Wavelet transform time-frequency image and convolutional network-based motor imagery EEG classification. Ieee Access, 7, 6084-6093.
+- [3] Tabar, Y. R., & Halici, U. (2016). A novel deep learning approach for classification of EEG motor imagery signals. Journal of neural engineering, 14(1), 016003.
+- [4] Aggarwal, S., & Chugh, N. (2019). Signal processing techniques for motor imagery brain computer interface: A review. Array, 1, 100003.
 
